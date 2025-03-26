@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Arial",  sans-serif
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+    color: #232e35;
+}
+
+p  {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p, 
+span, 
+label, 
+input, 
+textarea, 
+li {
+    color: #232e35;
+}
+
+a {
+    text-decoration: none;
+}
+
+main.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 5rem;
+    color: #fbfbfb;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+ .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 50px;
+
+ }   
+
+ .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+ }
+
+ .logo a{
+    color:#232e35
+ }
+
+ .nav ul li {
+    display: flex;
+    align-items: center;
+ }
+
+ nav ul li a {
+    color:#232e35
+ }
+
+ .burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+  }
+  
+  .burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+  }
+  
+
+ #hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    padding: 0 5%;
+}
+
+.hero-left {
+    text-align: left; 
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center; 
+}
+
+.hero-right img {
+    width: 90%;
+    max-width: 400px; 
+    height: auto;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+    color: #7e74f1;
+}
+
+
+#skills {
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+#hobby {
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #232e35;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #232e35;
+    margin-bottom: 2rem;
+    
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.skills {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.skills:hover {
+    transform: translateY(-10px);
+}
+
+.skills-icon {
+    margin: 0 auto;
+    background: #f5f3fe;
+    width: fit-content;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.skills h4 {
+    font-size: 1.5rem;
+    color: #232e35;
+    margin-bottom: 0.5rem;
+}
+
+.skills-icon svg {
+    fill: #7e74f1;
+}
+
+#skills .section-title {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.hobby {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.hobby:hover {
+    transform: translateY(-10px);
+}
+
+.hobby-icon {
+    margin: 0 auto;
+    background: #f5f3fe;
+    width: fit-content;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.hobby h4 {
+    font-size: 1.5rem;
+    color: #232e35;
+    margin-bottom: 0.5rem;
+}
+
+.hobby-icon svg {
+    fill: #7e74f1;
+}
+
+#hobby .section-title {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.education {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.education:hover {
+    transform: translateY(-10px);
+}
+
+.education-icon {
+    margin: 0 auto;
+    background: #f5f3fe;
+    width: fit-content;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.education h4 {
+    font-size: 1.5rem;
+    color: #232e35;
+    margin-bottom: 0.5rem;
+}
+
+#education .section-title {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-left {
+    width: 50%;
+}
+
+.contact-right {
+    width: 45%;
+}
+
+.contact-form  input, .contact-form textarea {
+    width: 100%;
+    padding: .75rem 1.3rem;
+    font-family: "Arial", sans-serif;
+    background: #fbfbfb;
+    border: 1px solid #232e35;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #9d9fa1;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: .75rem 1.3rem;
+    background-color: rgb(17, 136, 233);
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: blue;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    margin-bottom: 1.5rem;
+}
+
+.contact-item-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #E0CFF7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-shrink: 0; 
+}
+
+.contact-item-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #5C4DB1; 
+}
+
+.contact-item-detail {
+    display: flex;
+    flex-direction: column; 
+}
+
+footer {
+    padding: 4rem 0;
+    background: #fbfbfb;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 .5rem;
+}
+
+.footer-icons svg {
+    fill: #3e3f40;
+}
+
+.footer-icons a :hover svg {
+    fill: #000;
+}
+
