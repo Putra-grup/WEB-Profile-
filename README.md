@@ -1,3 +1,3 @@
 # WEB-Profile-
 # Deskripsi
-Pada website ini menyajikan data pribadi milik saya terkait skills, hobby, pendidikan, dan contact
+Pada website ini dibuat untuk mengenal lebih dalam tentang saya terkait skills, hobby, pendidikan, dan contact yang saya miliki.
